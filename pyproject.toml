@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "novashell"
+version = "1.0.0rc1"
+description = "AI-native developer shell"
+authors = [{name="Nova Team"}]
+requires-python = ">=3.10"
+dependencies = []
+readme = "README.md"
+
+[project.scripts]
+novashell = "core.__main__:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff", "mypy"]
+

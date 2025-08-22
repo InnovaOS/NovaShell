@@ -1,0 +1,5 @@
+# sample.ns
+pwd
+ls
+touch temp.txt
+ls
